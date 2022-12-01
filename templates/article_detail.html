@@ -8,4 +8,7 @@
     <p>{{ object.content }}</p>
 </div>
 
+<a href="{% url 'article_edit' object.pk %}">글 수정하기</a>
+<a href="{% url 'article_delete' object.pk %}">글 삭제하기</a>
+
 {% endblock content %}
