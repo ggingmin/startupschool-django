@@ -6,7 +6,7 @@ class Article(models.Model):
     title = models.CharField(max_length=200)
     content = models.TextField()
     author = models.ForeignKey(
-        "auth.User",
+        "accounts.CustomUser",
         on_delete=models.CASCADE
     )
 

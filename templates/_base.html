@@ -11,6 +11,7 @@
 </head>
 <body>
 
+
     <a href="{% url 'home' %}">홈</a>
     <a href="{% url 'articles' %}">글 목록</a>
     <a href="{% url 'article_new' %}">글 작성</a>
@@ -24,6 +25,7 @@
         <a href="{% url 'login' %}">로그인</a>
         <a href="{% url 'signup' %}">회원가입</a>
     {% endif %}
+
 
     {% block content %} {% endblock content %}
 
